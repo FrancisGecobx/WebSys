@@ -16,8 +16,22 @@
             margin: 50px auto;
         }
 
+        /* New styles to align the logo and title side-by-side */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .header-container img {
+            width: 80px; /* Adjust this value to change the logo size */
+            height: auto;
+            margin-right: 20px; /* Adds space between the logo and the text */
+        }
+
         h1 {
-            text-align: center;
+            margin: 0; /* Removed text-align center since Flexbox handles it now */
         }
 
     </style>
@@ -26,7 +40,13 @@
 <body>
 
     <div class="container">
-    <h1>Aldersgate College Inc.</h1>
+    
+    <!-- Wrapped the logo and title in a flex container -->
+    <div class="header-container">
+        <!-- The src now perfectly matches your GitHub uploaded file -->
+        <img src="aldersgate_logo.png" alt="Aldersgate College Logo">
+        <h1>Aldersgate College Inc.</h1>
+    </div>
 
     <h2>Vision</h2>
 
