@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <table border="1">
+  	<tr>
+    	<td>Enter Last Name:</td>
+    	<td><input type="text" name="txtLastName" placeholder="Enter Last Name" 						 value="Gecobe"readonly>      
+    </tr>
+    <tr>
+    	<td>Enter First Name:</td>
+        <td><input type="text" name="txtFirstName" placeholder="Enter First Name"
+        	 value="Francis" disabled>
+    </tr>
+    <tr>
+    	<td>Sex</td>       
+            <td><select name="radioSex">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            </select></td>
+    </tr>
+    <tr>
+    	<td>Course</td>
+        <td><label>BSIT</label><input type="checkbox" 
+        	 name="chckboxCourse" value="IT">
+             <label>BSN</label><input type="checkbox" 
+        	 name="chckboxCourse" value="Nursing"></td>            
+    </tr>
+    <tr>
+    	<td>Birthday</td>
+        <td><input type="date" name="dateBday"></td>
+    </tr>
+    <tr>
+    	<td>Email</td>
+        <td><input type="email" name="eMail"></td>
+    </tr>
+    <tr>
+    	<td>Password</td>
+        <td><input type="password" name="passWord"></td>
+    </tr>
+    <tr>
+    	<td> </td>
+    	<td><input type="submit" value="Submit"></td>
+    </tr>
+  </table>
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+</body>
+</html>
+
