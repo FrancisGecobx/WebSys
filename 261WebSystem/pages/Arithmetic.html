@@ -9,45 +9,25 @@
 
         <input type="text" id="number1" placeholder="Enter number 1"> <br/>
         <input type="text" id="number2" placeholder="Enter number 2"> <br/>
-        <button type="button" onclick="getSum()">Click to Display the Sum</button><br/>
-        <button type="button" onclick="getDifference()">Click to Display the Difference</button><br/>
-        <button type="button" onclick="getProduct()">Click to Display the Product</button><br/>
-        <button type="button" onclick="getQuotient()">Click to Display the Quotient</button><br/>
+        <button type="button" onclick="getAnswers()">Click to Display All Answers</button><br/>
 
-        <input type="text" id="result" readonly>
+        <p id="result"></p>
 
     </body>
 </html>
 
 <script>
-    function getSum() {
+    function getAnswers() {
         var num1 = parseFloat(document.getElementById("number1").value);
         var num2 = parseFloat(document.getElementById("number2").value);
         var sum = num1 + num2;
-        document.getElementById("result").value = sum;
-    }
-    function getDifference() {
-        var num1 = parseFloat(document.getElementById("number1").value);
-        var num2 = parseFloat(document.getElementById("number2").value);
         var diff = num1 - num2;
-        document.getElementById("result").value = diff;
-    }
-
-    function getProduct() {
-        var num1 = parseFloat(document.getElementById("number1").value);
-        var num2 = parseFloat(document.getElementById("number2").value);
         var product = num1 * num2;
-        document.getElementById("result").value = product;
-    }
-
-    function getQuotient() {
-        var num1 = parseFloat(document.getElementById("number1").value);
-        var num2 = parseFloat(document.getElementById("number2").value);
         if (num2 === 0) {
             document.getElementById("result").value = "Cannot divide by 0";
             return;
         }
         var quotient = num1 / num2;
-        document.getElementById("result").value = quotient;
+        document.getElementById("result").value = "Sum: " + sum + ", Difference: " + diff + ", Product: " + product + ", Quotient: " + quotient;
     }
 </script>
