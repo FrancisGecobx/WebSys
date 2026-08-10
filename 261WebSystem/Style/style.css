@@ -1,0 +1,35 @@
+.header-container img {
+    width: 120px;       
+    height: auto;        
+    margin-right: 20px;
+}
+
+h2 {
+    background-color: #f4f6f7;
+    color: #003366;           
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #003366; 
+    padding-bottom: 5px;
+}
+
+p { 
+    background-color: #f4f6f7;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+#academic {
+    background-color: #f4f6f7;
+    padding: 10px;
+    border-left: 4px solid #003366;
+}
+
+#program {
+    text-align: center;
+    font-style: italic;
+    color: #666666;
+    margin-top: 20px;
+}
