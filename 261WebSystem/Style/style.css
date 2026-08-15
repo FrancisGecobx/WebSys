@@ -26,6 +26,7 @@ body {
 
 /* Section headings */
 h2 {
+    text-align: center;
     background-color: #f4f6f7;
     color: #003366;
     font-size: 22px;
@@ -44,13 +45,40 @@ p {
     margin-bottom: 15px;
 }
 
-
-/* Academic Excellence */
-#academic {
+/* Vision */
+#vision {
+    text-align: center;
     padding: 10px;
     border-left: 4px solid #003366;
 }
 
+/* Mission */
+#mission {
+    text-align: center;
+    padding: 10px;
+    border-left: 4px solid #003366;
+}
+
+/* Academic Excellence */
+#academic {
+    text-align: center;
+    padding: 10px;
+    border-left: 4px solid #003366;
+}
+
+/* Social Relevance */
+#social {
+    text-align: center;
+    padding: 10px;
+    border-left: 4px solid #003366;
+}
+
+/* Spiritual Nurturance*/
+#spiritual {
+    text-align: center;
+    padding: 10px;
+    border-left: 4px solid #003366;
+}
 
 /* Programmer */
 #program {
