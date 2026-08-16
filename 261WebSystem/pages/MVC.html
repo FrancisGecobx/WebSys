@@ -1,82 +1,88 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Aldersgate College Inc.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MVC</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Style/style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../Style/style.css">
 
 </head>
+<body class="bg-light">
 
-<body>
+  <div class="container my-5 p-4 main-container">
 
-        <div class="container">
+    <h1 class="font-weight-bold text-center mb-3 text-teal">Aldersgate College Inc.</h1>
+    <hr class="mb-4 divider-teal">
 
-            <div class="header-container d-flex justify-content-center align-items-center">
-                <img src="../images/aldersgate_logo.png" alt="Aldersgate College Logo">
-                <h1>Aldersgate College Inc.</h1>
-            </div>
+    <div class="row align-items-center mb-4">
 
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-
-                    <h2>Vision</h2>
-
-                    <p id="vision">
-                        A 21st Century University<br>
-                        Transforming a global network<br>
-                        of learners for enlightenment,<br>
-                        leadership and human service.
-                    </p>
-
-                    <h2>Mission</h2>
-
-                    <p id="mission">
-                        Aldersgate College was established to develop<br>
-                        the power of reason, to liberate people from<br>
-                        ignorance, penury and hopelessness, and to<br>
-                        empower them to commence their own journey<br>
-                        for social and economic transformation<br>
-                        and spiritual salvation.
-                    </p>
-
-                    <h2>Core Values</h2>
-
-                    <p id="academic">
-                        <b>Academic Excellence</b><br>
-                        Train students to become academically<br>
-                        and professionally competent.
-                    </p>
-
-                    <p id="social">
-                        <b>Social Relevance</b><br>
-                        Impresss norms, values and behaviors that<br>
-                        are socially relevant to the human development<br>
-                        needs of the majority and the less fortunate<br>
-                        and at the same time responsive to the<br>
-                        ideals of a democratic society.
-                    </p>
-
-                    <p id="spiritual">
-                        <b>Spiritual Nurturance</b><br>
-                        Evolve and incubate spiritual knowingness<br>
-                        founded on absolute biblical truth and concurrently<br>
-                        promoting unity, moral uprightness and dedication<br>
-                        to Chistian Services.
-                    </p>
-
-                </div>
-            </div>
-
-            <hr>
-
-            <p id="program">
-                Programmed by: Francis Robert Gecobe
-            </p>
-
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="p-3 bg-cream h-100">
+          <h5 class="font-weight-bold text-orange">Vision</h5>
+          <p class="small text-muted mb-0">
+            A 21st Century University transforming a global network of learners for enlightenment, leadership, and human service.
+          </p>
         </div>
+      </div>
+
+      <div class="col-md-5 mb-3 mb-md-0">
+        <div class="p-3 bg-cream h-100">
+          <h5 class="font-weight-bold text-orange">Mission</h5>
+          <p class="small text-muted mb-0">
+            Aldersgate College was established to develop the power of reason, to liberate people from ignorance, penury, and hopelessness, and to empower them to commence their own journey for social and economic transformation and spiritual salvation.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3 text-center">
+        <img src="../images/aldersgate_logo.png" alt="Aldersgate College Logo" class="img-fluid logo-img">
+      </div>
+
+    </div>
+
+    <div class="p-3 mb-4 bg-cream">
+      <h5 class="font-weight-bold text-orange">Goals & Objectives</h5>
+      <ol class="pl-3 mb-0 small text-muted">
+        <li class="mb-2">Educate individuals to think and act as ethical leaders who are spiritually awakened, morally upright, and responsible citizens in the global community.</li>
+        <li class="mb-2">Inculcate critical and innovative thinking, technological fluency, multicultural skills, and responsible citizenship within the global community.</li>
+        <li class="mb-2">Deliver affordable, flexible, and collaborative educational programs using systems and resources that comply with international standards of quality, professional licensure, and practice.</li>
+        <li>Offer career pathways and migration channels through a network of transnational institutions, professional guilds, and accrediting agencies.</li>
+      </ol>
+    </div>
+
+    <!-- Core Values Section -->
+    <div class="p-3 mb-4 bg-cream">
+      <h5 class="font-weight-bold mb-3 text-orange">Core Values</h5>
+
+      <p id="academic" class="small text-muted mb-3">
+        <b class="text-teal">Academic Excellence</b><br>
+        Train students to become academically and professionally competent.
+      </p>
+
+      <p id="social" class="small text-muted mb-3">
+        <b class="text-teal">Social Relevance</b><br>
+        Impress norms, values and behaviors that are socially relevant to the human development needs of the majority and the less fortunate and at the same time responsive to the ideals of a democratic society.
+      </p>
+
+      <p id="spiritual" class="small text-muted mb-0">
+        <b class="text-teal">Spiritual Nurturance</b><br>
+        Evolve and incubate spiritual knowingness founded on absolute biblical truth and concurrently promoting unity, moral uprightness and dedication to Christian Services.
+      </p>
+    </div>
+
+    <div class="d-flex align-items-center mt-4">
+      <div class="circle-img-box mr-3">
+        <img src="../images/Gecobe.jpg" alt="Francis Rob Gecobe">
+      </div>
+      <p class="font-weight-bold mb-0 text-teal">Programmed by Francis Rob Gecobe</p>
+    </div>
+
+  </div>
 
 </body>
-
 </html>
