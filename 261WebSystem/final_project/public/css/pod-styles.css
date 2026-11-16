@@ -2035,3 +2035,37 @@ body.student-portal-body {
     color: #005a36;
     font-weight: 700;
 }
+
+/* =========================================================
+   LAPTOP & SCALED VIEWPORT RESPONSIVE FIX
+   ========================================================= */
+.main-content {
+    flex: 1;
+    min-width: 0; /* Prevents flex child from overflowing screen width */
+    overflow-x: hidden;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+}
+
+/* Stack 2-column dashboard sections cleanly on laptops / scaled screens */
+@media (max-width: 1366px) {
+    .dashboard-grid,
+    .analytics-grid,
+    .content-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Keep table action buttons on one line and allow horizontal scroll inside cards */
+.card {
+    overflow-x: auto;
+}
+
+.data-table td a,
+.data-table td button {
+    white-space: nowrap;
+}
